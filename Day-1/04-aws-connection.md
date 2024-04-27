@@ -31,3 +31,35 @@ aws configure
 ```
 
 It will prompt you to enter your AWS Access Key ID, Secret Access Key, default region, and default output format. Enter the credentials you obtained in the previous step.
+
+
+ 1  pwd
+    2  terraform
+    3  /etc/
+    4  ls
+    5  cat /etc/os-release 
+    6  clear
+    7  ls
+    8  cd /workspaces/terraform-zero-to-hero
+    9  ls
+   10  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   11  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   12  sudo apt update && sudo apt install terraform
+   13  clear
+   14  terraform --version
+   15  ls -a
+   16  clear
+   17  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   18  unzip awscliv2.zip
+   19  sudo ./aws/install
+   20  aws --version
+   21  clear
+   22  aws config
+   23  aws configure
+   24  clear
+   25  ls
+   26  cd Day-
+   27  cd Day-1
+   28  ls
+   29  aws sts get-caller-identity
+   30  history
